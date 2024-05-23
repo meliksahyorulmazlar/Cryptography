@@ -7,7 +7,7 @@ class CaesarCipher:
 
     def encrypt(self,text:str,shift:int):
         new_letters:list = []
-        text.lower()
+        text = text.lower()
         for letter in text:
             if letter in self.alphabet:
                 position = (self.alphabet.index(letter) +shift) % 26
@@ -18,7 +18,7 @@ class CaesarCipher:
 
     def decrypt(self,text:str,shift:int):
         new_letters = []
-        text.lower()
+        text = text.lower()
         for letter in text:
             if letter in self.alphabet:
                 position = (self.alphabet.index(letter) -shift) % 26
