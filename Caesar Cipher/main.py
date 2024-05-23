@@ -38,9 +38,9 @@ class CaesarCipher:
 
 def main():
     caesar = CaesarCipher()
-    user_text:str = input('What text would you like to encrypt or decrypt with the caesar cipher?')
-    user_shift:int = int(input("What is the shift amount?"))
-    type:str = input("Do you want to encrypt or decrypt")
+    user_text:str = input('What text would you like to encrypt or decrypt with the caesar cipher?\n')
+    user_shift:int = int(input("What is the shift amount?\n"))
+    type:str = input("Do you want to encrypt or decrypt\n")
     if type.lower() == "decrypt":
         caesar.decrypt(user_text,user_shift)
     else:
